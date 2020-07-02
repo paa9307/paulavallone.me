@@ -1,0 +1,116 @@
+        body {   
+            background: #bb8e4c;
+            /* https://pixabay.com/photos/background-old-fashioned-retro-2136168/ */
+            background-image:url("../images/paper.jpg");
+            background-position: center;
+            background-repeat: repeat-y;
+            background-size: cover;
+            font-family: 'Seaweed Script', cursive;
+            font-size: 20px;
+            text-align: center;
+            color:#443708;
+        }
+
+        canvas {
+            margin-left: 10px;
+            margin-top: 10px;
+            border: 5px solid #443708;
+            background: black;
+        }
+        .butt{
+            margin-left:0px;
+            margin-top:0px;
+            border: 2px solid #443708;
+            padding: .1em .1em; 
+            background-color:#fff8dc;
+            border-color: darkred;
+        }
+        .butt:hover{
+            background-color:#fffcf2;
+            border-color:darkred;
+        }
+        .butt:focus{
+            border-color:darkred;
+        }
+        .butt:active{
+            background-color:#fff8dc;
+            color:red;
+        }
+        .cBox{
+            height: 20px;
+            width: 20px;
+        }
+        .rButt{
+            height: 20px;
+            width: 20px;
+        }
+        /*used code for progess bar https://css-tricks.com/html5-progress-element/*/
+        progress[value] {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 650px;
+            height: 20px;
+        }
+        progress[value]::-webkit-progress-bar {
+            background-color: cornsilk;
+            border-radius: 2px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+        }
+        progress[value]::-webkit-progress-value {
+            background-color: #927242;
+        }
+
+        #controls {
+            margin-left: 10px;
+            margin-top: 10px;
+        }
+        #slide{
+            margin-left: -450px;
+            margin-top: 0px;
+        }
+        #check{
+            margin-left: 0px;
+            margin-top: -370px;
+        }
+        #tin{
+            margin-top: 0px;
+        }
+        #noise{
+            margin-top: 0px;
+        }
+        #sepia{
+            margin-top: 0px;
+        }
+        
+        #radio{
+            margin-left: 420px;
+            margin-top: -370px;
+        }
+        #waveButt{
+            margin-top: 0px;
+        }
+        #bothButt{
+            margin-top: 0px;
+        }
+
+        section {
+            margin-bottom: 1em;
+        }
+
+        #playButton {
+            font-size: 1.2em;
+            width: 3.5em;
+        }
+
+        button[data-playing="yes"]:after {
+            content: "Pause";
+        }
+
+        button[data-playing="no"]:after {
+            content: "Play";
+        }
+
+        #fsButton {
+            font-size: 1.2em;
+            width: 6em;
+        }
