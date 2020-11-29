@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Paul Avallone</title>
+  <meta name="description" content="Portfolio for Game Design and Developer Paul Avallone">
+  <meta name="author" content="Paul Avallone">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" >
+
+</head>
+<body>
+    <header class="main_nav green">
+        <div class="container">
+            <div class="twelve columns">
+                <div class="logo"><a href="#">PAUL AVALLONE</a></div>
+                <div class="tag">Creating is Living</div>
+            </div>
+        </div>
+    </header>
+
+    <div class ="container main">
+        <p><b>My Designed Levels</b></p>
+                <div class="text">Links to go to Youtube playthroughs of my levels with commentary.
+                    Below that are PDF's of my rough designs before I implemented them.
+                </div>
+                      
+        <div class ="row">
+            <div class="four columns portfolio">
+                <a href="https://www.youtube.com/watch?v=eZkS9GvT7UA&t=1s"><img src="images/hl2Level.jpg" alt="hl2Level"/></a>
+                <a href="https://www.youtube.com/watch?v=eZkS9GvT7UA&t=1s"><p>Half Life 2 Level</p></a>
+                <div class="text">A level I made in Half Life 2 using Valve's Hammer editor.</div>
+            </div>
+            <div class="four columns portfolio">
+                <a href="https://www.youtube.com/watch?v=8l236fALxNs"><img src="images/portal2Level.jpg" alt="portal2Level"/></a>
+                <a href="https://www.youtube.com/watch?v=8l236fALxNs"><p>Portal 2 Level</p></a>
+                <div class="text">A level I made in Portal 2's custom level editor.</div>
+            </div>
+            <div class="four columns portfolio">
+                <a href="https://www.youtube.com/watch?v=YfjZmBFrzQo"><img src="images/bbtLevel.jpg" alt="bbtLevel"/></a>
+                <a href="https://www.youtube.com/watch?v=YfjZmBFrzQo"><p>Battle Block Theater Level</p></a>
+                <div class="text">A level I made in Battle Block Theater's custom level editor.</div>
+            </div>
+        </div>
+        <div class ="resume">
+            <object width="800" height="800" data="HL2_Design.pdf"></object>
+            <object width="800" height="800" data="P2_Design.pdf"></object>
+            <object width="800" height="800" data="BBT_Design.pdf"></object>
+        </div>      
+    <footer>
+        <div class="container">
+            <div class="row twelve columns"></div>
+                <ul class="social">
+                    <li class="facebook"><a href="https://www.facebook.com/paul.avallone.12"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/paul-avallone-3a1133127"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+                </ul>
+            <div class="row twelve columns">
+                <p class="copyright"><b>EMAIL</b>: paa9307@rit.edu</p>
+                <p class="copyright"><b>Web page sources</b>: Lynda.com, W3Schools, Google Fonts, Font Awesome</p>
+                <p class="copyright">&copy; 2017 Paul Avallone. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scripts/jquery.magnific-popup.js"></script>
+  <script type ="text/javascript">
+        // Initialize popup as usual
+        $('.image-link').magnificPopup({
+        type: 'image',
+        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+        zoom: {
+            enabled: true, // By default it's false, so don't forget to enable it
+
+            duration: 300, // duration of the effect, in milliseconds
+            easing: 'ease-in-out', // CSS transition easing function
+
+            // The "opener" function should return the element from which popup will be zoomed in
+            // and to which popup will be scaled down
+            // By defailt it looks for an image tag:
+            opener: function(openerElement) {
+            // openerElement is the element on which popup was initialized, in this case its <a> tag
+            // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+            return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
+
+        });
+  </script>
+
+</body>
+</html>
