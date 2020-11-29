@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Paul Avallone</title>
+  <meta name="description" content="Portfolio for Game Design and Developer Paul Avallone">
+  <meta name="author" content="Paul Avallone">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Limelight" rel="stylesheet">
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png" >
+
+</head>
+<body>
+    <header class="main_nav green">
+        <div class="container">
+            <div class="twelve columns">
+                <div class="logo"><a href="#">PAUL AVALLONE</a></div>
+                <div class="tag">Creating is Living</div>
+            </div>
+        </div>
+    </header>
+
+    <div class ="container main">
+        <p><b>Bioshockish</b></p>
+                <div class="text">An environment I made in Unreal Engine 4 using free assets. 
+                    The purpose of the project was to make an enviroment with too many polygons so that it ran poorly then to fix it as best as possible without removing any assets.
+                    I improved the performance by implementing shifting LODs and asset loading.
+                    I made a skyrail system between floating islands and collectable crystals using Blueprints. 
+                    <br><br><a href="https://drive.google.com/file/d/1i_4y0Fi65N7iBZ6iG-0UilE6y8qawN3A/view?usp=sharing">Google Drive download link</a>
+                </div>
+                
+                    
+                
+        <div class ="row">
+            <div class="four columns portfolio">
+                <a class="image-link" href="images/bs2.jpg"><img src="images/bs2.jpg" alt="bioshockish2"/></a>
+                <div class="text">To collect cyrstals walk up close & press F</div>
+            </div>
+            <div class="four columns portfolio">
+                <a class="image-link" href="images/bioshockish.jpg"><img src="images/bioshockish.jpg" alt="bioshockish"/></a>
+                <div class="text">Look here when riding 1st skyrail to see tree explosion trigger</div>
+            </div>
+            <div class="four columns portfolio">
+                <a class="image-link" href="images/bs3.jpg"><img src="images/bs3.jpg" alt="bioshockish3"/></a>
+                <div class="text">Go in here on the 2nd island to spawn skyrail to 3rd island</div>
+            </div>
+        </div>
+        <div>
+            <ul>  
+                <b>Controls:</b>
+                <li>WASD: Movement</li>
+                <li>Left Click: Shoot ball</li>
+                <li>Right Click: Attach to orb on skyrail</li>
+                <li>Space: Jump/Jump off skyrail</li>
+                <li>F: Move Forward & Stop on skyrail/Collect crystals</li>
+                <li>E: Move Backward & Stop on skyrail</li>
+                <li>P/ESC: Pause</li>
+            </ul>
+        </div>
+    <footer>
+        <div class="container">
+            <div class="row twelve columns"></div>
+                <ul class="social">
+                    <li class="facebook"><a href="https://www.facebook.com/paul.avallone.12"><i class="fa fa-facebook-square fa-lg"></i></a></li>
+                    <li class="linkedin"><a href="https://www.linkedin.com/in/paul-avallone-3a1133127"><i class="fa fa-linkedin-square fa-lg"></i></a></li>
+                </ul>
+            <div class="row twelve columns">
+                <p class="copyright"><b>EMAIL</b>: paa9307@rit.edu</p>
+                <p class="copyright"><b>Web page sources</b>: Lynda.com, W3Schools, Google Fonts, Font Awesome</p>
+                <p class="copyright">&copy; 2017 Paul Avallone. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+  <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="scripts/jquery.magnific-popup.js"></script>
+  <script type ="text/javascript">
+        // Initialize popup as usual
+        $('.image-link').magnificPopup({
+        type: 'image',
+        mainClass: 'mfp-with-zoom', // this class is for CSS animation below
+
+        zoom: {
+            enabled: true, // By default it's false, so don't forget to enable it
+
+            duration: 300, // duration of the effect, in milliseconds
+            easing: 'ease-in-out', // CSS transition easing function
+
+            // The "opener" function should return the element from which popup will be zoomed in
+            // and to which popup will be scaled down
+            // By defailt it looks for an image tag:
+            opener: function(openerElement) {
+            // openerElement is the element on which popup was initialized, in this case its <a> tag
+            // you don't need to add "opener" option if this code matches your needs, it's defailt one.
+            return openerElement.is('img') ? openerElement : openerElement.find('img');
+            }
+        }
+
+        });
+  </script>
+
+</body>
+</html>
