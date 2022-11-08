@@ -21,6 +21,9 @@ body{
     color:#000;
     background-color:lightblue;
 }
+h1{
+    font-family: 'Limelight', cursive;
+}
 h2{
     font-family: 'Limelight', cursive;
     font-size: 3em;
@@ -64,6 +67,10 @@ header.main_nav{
 /*Images & Media
 ------------------------------*/
 img{max-width: 100%;}
+img.project{
+    border-radius: 50px;
+    border: 4px solid navy;
+}
 img.avatar{
     border-radius: 400px;
     border: 5px solid lightblue;
@@ -76,6 +83,7 @@ p{font-size:1.25em;}
     color: black;
     font-size: 15px;
     overflow: visible;
+    float:left
   }
   object{
     display:block;
@@ -85,6 +93,9 @@ p{font-size:1.25em;}
     margin-top: -5%;
     margin-bottom: 10%;
 }
+p.left{float:left;}
+p.right{float:right;}
+p.center{text-align:center;}
 
 /*Footer
 ------------------------------*/
