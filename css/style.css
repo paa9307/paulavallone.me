@@ -133,8 +133,8 @@ p.center{text-align:center;}
 }
 #resume embed {
     margin-top: 30px;
-    width: 768px;
-    height: 800px;
+    height:125vh;
+    width: 70%;
 }
 
 /*Footer
@@ -163,6 +163,7 @@ p.copyright{
     font-size: 1em;
 }
 
+
 /*Media Queries
 ------------------------------*/
 /* Larger than mobile */
@@ -172,7 +173,7 @@ p.copyright{
     .portfolio img{margin-bottom: 10%;}
     img.avatar{margin-top: 15%;}
     h2.bio{font-size: 2.5em;}
-    p.bio{font-size: 1.75em;color: #3f7f7c;}
+    p.bio{font-size: 1.75em;color: lightblue;}
     ul.social li a{font-size: .75em;}
     object{width:100%;}
 }
