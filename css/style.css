@@ -183,7 +183,24 @@
 /*Fixes subnav choices to not getting cut off*/
 @media (min-width: 0px){
   .navbar .subnav:hover {
-   height:140px;
+   height:186px;
+  }
+  .navbar a {
+     font-size: 12px;
+  }
+  .subnav .subnavbtn a {
+    font-size: 10px;
+    bottom: 16px;
+  }
+  .subnavbtn{
+    font-size: 10px;
+    padding: 14px 16px;
+    padding-bottom: 40px;
+  }
+}
+@media (min-width: 484px){
+  .navbar .subnav:hover {
+   height:142px;
   }
   .navbar a {
      font-size: 12px;
