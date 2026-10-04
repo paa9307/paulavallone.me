@@ -433,6 +433,9 @@ img.avatar2{
     border: 5px solid #E6923C;
 }
 @media (max-width: 550px){
+  img.avatar {
+   max-width:60%;
+  }
   img.avatar2 {
    max-width:60%;
   }
